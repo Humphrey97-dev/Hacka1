@@ -21,7 +21,7 @@ Welcome to the personal portfolio of **Humphrey Wambu**. This website highlights
 2. **Run Locally**:
    - Clone the repository:
      ```bash
-     git clone https://github.com/your-username/portfolio.git
+     git clone https://github.com/Humphrey97-dev/Hacka1.git
      ```
    - Open `index.html` in your browser to view the portfolio.
 

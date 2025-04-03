@@ -190,12 +190,12 @@
         <h1>Humphrey Wambu's Portfolio</h1>
     </header>
 
-    <section id="about">
+    <section id="about" onclick="changeBackgroundColor(this)">
         <h2>About Me</h2>
         <p>My name is Humphrey Wambu, an enthusiastic and driven Actuarial Scientist with a passion for technology and data analysis. I graduated with a BSc in Actuarial Science with IT from Maseno University and am currently studying Software Engineering at PLP Academy. My expertise includes actuarial valuation, data analysis, and asset management, with experience contributing to NHIF Kenya.</p>
     </section>
 
-    <section id="education">
+    <section id="education" onclick="changeBackgroundColor(this)">
         <h2>Educational Background</h2>
         <ul>
             <li><strong>BSc in Actuarial Science with IT</strong> – Maseno University (2016 - 2020)</li>
@@ -212,7 +212,7 @@
         </ul>
     </section>
 
-    <section id="skills">
+    <section id="skills" onclick="changeBackgroundColor(this)">
         <h2>Skills</h2>
         <ul>
             <li><strong>Programming Languages:</strong> Python, R, Latex</li>
@@ -223,7 +223,7 @@
         </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" onclick="changeBackgroundColor(this)">
         <h2>Projects</h2>
         <ul>
             <li><strong>Project 1: HTML5 Elements and Forms</strong>
@@ -247,7 +247,7 @@
         </ul>
     </section>
 
-    <section id="interests">
+    <section id="interests" onclick="changeBackgroundColor(this)">
         <h2>Interests</h2>
         <ul>
             <li><strong>Web Development:</strong> Experimenting with new frameworks and enhancing website interactivity.</li>
@@ -256,24 +256,33 @@
         </ul>
     </section>
 
-    <section id="cv">
+    <section id="cv" onclick="changeBackgroundColor(this)">
         <h2>Curriculum Vitae</h2>
         <p>For more detailed information about my background, achievements, and professional experiences, feel free to download my CV:</p>
         <a href="https://drive.google.com/uc?export=download&id=1PJi1uPAasHE07aY3ErpnIKwfULHCpGyU" download="Humphrey_Wambu_CV.pdf">Download My CV</a>
     </section>
 
-    <section id="contact">
+    <section id="contact" onclick="changeBackgroundColor(this)">
         <h2>Contact Me</h2>
         <p>Do not hesitate to contact me for collaborations or questions. I can be reached via:</p>
         <ul>
             <li><strong>Email:</strong> <a href="mailto:wambuhumphrey@gmail.com">wambuhumphrey@gmail.com</a></li>
             <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/humphrey-masinde/" target="_blank">LinkedIn Profile</a></li>
-            <li><strong>GitHub:</strong> <a href="Your GitHub URL" target="_blank">GitHub Profile</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Humphrey97-dev" target="_blank">GitHub Profile</a></li>
         </ul>
     </section>
 
     <footer>
         <p>&copy; 2025 Humphrey Wambu | All Rights Reserved</p>
     </footer>
+
+    <script>
+        // JavaScript function to change background color of the clicked section
+        function changeBackgroundColor(section) {
+            section.style.backgroundColor = "#e0f7fa";  // Light cyan background color
+        }
+    </script>
 </body>
 </html>
+
+<!-- End of Response.html -->

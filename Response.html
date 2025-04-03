@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Humphrey Wambu - Actuarial Scientist and Software Engineering Student">
+    <meta name="keywords" content="Humphrey Wambu, Actuarial Science, Software Engineering, Portfolio, Data Analysis, Web Development">
+    <meta name="author" content="Humphrey Wambu">
+    <title>Humphrey Wambu - Portfolio</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;  /* Light gray background */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #004d99;  /* Deep blue header */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #003366;  /* Darker blue for nav bar */
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Dropdown Menu */
+        header nav ul li:hover > ul {
+            display: block;
+        }
+
+        header nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #003366;
+            list-style: none;
+            padding: 10px;
+        }
+
+        header nav ul li ul li {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        header nav ul li ul li a {
+            font-size: 1rem;
+            color: white;
+        }
+
+        header nav ul li ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styles */
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: #ffffff;  /* White background for content */
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #004d99;  /* Blue color for headings */
+            font-size: 2rem;
+            border-bottom: 2px solid #004d99;  /* Blue underline for emphasis */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d99;  /* Deep blue footer */
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Contact Form Section */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, select {
+            padding: 8px;
+            margin-bottom: 15px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #004d99;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003366;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">More</a>
+                    <ul>
+                        <li><a href="#cv">CV</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1>Humphrey Wambu's Portfolio</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Humphrey Wambu, an enthusiastic and driven Actuarial Scientist with a passion for technology and data analysis. I graduated with a BSc in Actuarial Science with IT from Maseno University and am currently studying Software Engineering at PLP Academy. My expertise includes actuarial valuation, data analysis, and asset management, with experience contributing to NHIF Kenya.</p>
+    </section>
+
+    <section id="education">
+        <h2>Educational Background</h2>
+        <ul>
+            <li><strong>BSc in Actuarial Science with IT</strong> – Maseno University (2016 - 2020)</li>
+            <li><strong>Software Engineering at PLP Academy</strong> – Current (2025)</li>
+            <li>Courses include:
+                <ul>
+                    <li>Software Engineering Essentials</li>
+                    <li>Python Programming</li>
+                    <li>Database Design & SQL Programming</li>
+                    <li>Web Development V2</li>
+                    <li>Startup Building for Developers</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, R, Latex</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Database Management:</strong> SQL, Database Design</li>
+            <li><strong>Tools & Frameworks:</strong> Git, GitHub, CLI, Jupyter, VS Code, Netlify</li>
+            <li><strong>Soft Skills:</strong> Problem-solving, Project Management, Team Collaboration</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1: HTML5 Elements and Forms</strong>
+                <ul>
+                    <li>Showcase of HTML5 elements, forms, tables, and multimedia integration.</li>
+                    <li>Link to project: <a href="https://github.com/PLP-WebTechnologies/feb-2025-advanced-html-Humphrey97-dev.git" target="_blank">GitHub Link</a></li>
+                </ul>
+            </li>
+            <li><strong>Project 2: List Manipulation in Python</strong>
+                <ul>
+                    <li>Demonstrated list operations such as append, insert, extend, sort, and index search.</li>
+                    <li>Link to project: <a href="https://github.com/Humphrey97-dev/Week-2-python-assignment.git" target="_blank">GitHub Link</a></li>
+                </ul>
+            </li>
+            <li><strong>Project 3: SQL Database Design for Healthcare Data</strong>
+                <ul>
+                    <li>Created and managed databases using basic SQL operations.</li>
+                    <li>Link to project: <a href="https://github.com/PLP-Database-Design/wk-1-Humphrey97-dev.git" target="_blank">GitHub Link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li><strong>Web Development:</strong> Experimenting with new frameworks and enhancing website interactivity.</li>
+            <li><strong>Tech Innovations:</strong> Keeping up with trends in software development and data science.</li>
+            <li><strong>Startup Culture:</strong> Passionate about the entrepreneurial journey and building new tech solutions.</li>
+        </ul>
+    </section>
+
+    <section id="cv">
+        <h2>Curriculum Vitae</h2>
+        <p>For more detailed information about my background, achievements, and professional experiences, feel free to download my CV:</p>
+        <a href="https://drive.google.com/uc?export=download&id=1PJi1uPAasHE07aY3ErpnIKwfULHCpGyU" download="Humphrey_Wambu_CV.pdf">Download My CV</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Do not hesitate to contact me for collaborations or questions. I can be reached via:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:wambuhumphrey@gmail.com">wambuhumphrey@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/humphrey-masinde/" target="_blank">LinkedIn Profile</a></li>
+            <li><strong>GitHub:</strong> <a href="Your GitHub URL" target="_blank">GitHub Profile</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Humphrey Wambu | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

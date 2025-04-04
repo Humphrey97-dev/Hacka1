@@ -11,36 +11,59 @@
         /* General styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;  /* Light gray background */
+            background: linear-gradient(to right, #ff7e5f, #feb47b);  /* Gradient background */
             margin: 0;
             padding: 0;
             color: #333;
+            height: 100%;
+            display: flex;
+            justify-content: center; /* Centers the body */
+            flex-direction: column;
+            box-sizing: border-box;
+            overflow-y: auto;  /* Ensures scrollability */
         }
 
         /* Header and Navigation */
         header {
-            background-color: #004d99;  /* Deep blue header */
+            background-color: #003366;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
+            width: 100%;
+            max-width: 1200px; /* Max width of header */
+            margin: 0 auto; /* Centers header */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 0;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
         }
 
         header nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
-            background-color: #003366;  /* Darker blue for nav bar */
+            background-color: #003366;
             display: flex;
             justify-content: center;
+            border-radius: 10px;
+            margin-top: 20px;
         }
 
         header nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
             position: relative;
         }
 
@@ -48,58 +71,48 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            transition: color 0.3s;
         }
 
-        /* Dropdown Menu */
-        header nav ul li:hover > ul {
-            display: block;
-        }
-
-        header nav ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #003366;
-            list-style: none;
-            padding: 10px;
-        }
-
-        header nav ul li ul li {
-            margin: 0;
-            padding: 5px 0;
-        }
-
-        header nav ul li ul li a {
-            font-size: 1rem;
-            color: white;
-        }
-
-        header nav ul li ul li a:hover {
-            text-decoration: underline;
+        header nav ul li:hover > a {
+            color: #ffcc00;
         }
 
         /* Section styles */
         section {
             padding: 30px;
             margin: 20px;
-            background-color: #ffffff;  /* White background for content */
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1200px; /* Max width for sections */
+            width: 100%; /* Full width */
+            margin: 20px auto; /* Center sections */
+            transition: background-color 0.3s ease;
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
         }
 
         h2 {
-            color: #004d99;  /* Blue color for headings */
-            font-size: 2rem;
-            border-bottom: 2px solid #004d99;  /* Blue underline for emphasis */
+            color: #004d99;
+            font-size: 2.5rem;
+            border-bottom: 2px solid #004d99;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
 
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc;
+            padding: 0 20px;
         }
 
         ul li {
@@ -109,9 +122,11 @@
         a {
             color: #007bff;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         a:hover {
+            color: #ff7e5f;
             text-decoration: underline;
         }
 
@@ -119,11 +134,21 @@
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #004d99;  /* Deep blue footer */
+            background-color: #003366;
             color: white;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
+            animation: fadeIn 1s ease-in-out;
+            margin-top: 20px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         /* Contact Form Section */
@@ -131,19 +156,23 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            margin-top: 20px;
         }
 
         label {
             margin: 10px 0 5px;
+            font-size: 1.1rem;
         }
 
-        input, select {
-            padding: 8px;
+        input, select, textarea {
+            padding: 10px;
             margin-bottom: 15px;
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
         }
 
         input[type="submit"] {
@@ -151,10 +180,28 @@
             color: white;
             border: none;
             cursor: pointer;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 40px; /* Ensure it is visible above footer */
         }
 
         input[type="submit"]:hover {
             background-color: #003366;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #ff7e5f;
+        }
+
+        /* Image Responsiveness */
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 900px; /* Limit image size */
+            border-radius: 10px;
+            margin-top: 20px;
         }
 
         /* Responsive Design */
@@ -179,12 +226,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a href="#">More</a>
-                    <ul>
-                        <li><a href="#cv">CV</a></li>
-                    </ul>
-                </li>
+                <li><a href="#cv">Curriculum Vitae</a></li> <!-- Replaced "More" with CV link -->
             </ul>
         </nav>
         <h1>Humphrey Wambu's Portfolio</h1>
@@ -193,6 +235,7 @@
     <section id="about" onclick="changeBackgroundColor(this)">
         <h2>About Me</h2>
         <p>My name is Humphrey Wambu, an enthusiastic and driven Actuarial Scientist with a passion for technology and data analysis. I graduated with a BSc in Actuarial Science with IT from Maseno University and am currently studying Software Engineering at PLP Academy. My expertise includes actuarial valuation, data analysis, and asset management, with experience contributing to NHIF Kenya.</p>
+        <img src="https://images.pexels.com/photos/8443463/pexels-photo-8443463.jpeg" alt="Profile Image">
     </section>
 
     <section id="education" onclick="changeBackgroundColor(this)">
@@ -210,6 +253,7 @@
                 </ul>
             </li>
         </ul>
+        <img src="https://images.pexels.com/photos/4218705/pexels-photo-4218705.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Education Image">
     </section>
 
     <section id="skills" onclick="changeBackgroundColor(this)">
@@ -221,6 +265,7 @@
             <li><strong>Tools & Frameworks:</strong> Git, GitHub, CLI, Jupyter, VS Code, Netlify</li>
             <li><strong>Soft Skills:</strong> Problem-solving, Project Management, Team Collaboration</li>
         </ul>
+        <img src="https://images.pexels.com/photos/262438/pexels-photo-262438.jpeg" alt="Skills Image">
     </section>
 
     <section id="projects" onclick="changeBackgroundColor(this)">
@@ -245,6 +290,7 @@
                 </ul>
             </li>
         </ul>
+        <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg" alt="Projects Image">
     </section>
 
     <section id="interests" onclick="changeBackgroundColor(this)">
@@ -254,22 +300,31 @@
             <li><strong>Tech Innovations:</strong> Keeping up with trends in software development and data science.</li>
             <li><strong>Startup Culture:</strong> Passionate about the entrepreneurial journey and building new tech solutions.</li>
         </ul>
+        <img src="https://images.pexels.com/photos/5425686/pexels-photo-5425686.jpeg" alt="Interests Image">
     </section>
 
     <section id="cv" onclick="changeBackgroundColor(this)">
         <h2>Curriculum Vitae</h2>
         <p>For more detailed information about my background, achievements, and professional experiences, feel free to download my CV:</p>
         <a href="https://drive.google.com/uc?export=download&id=1PJi1uPAasHE07aY3ErpnIKwfULHCpGyU" download="Humphrey_Wambu_CV.pdf">Download My CV</a>
+        <img src="https://images.pexels.com/photos/5598290/pexels-photo-5598290.jpeg" alt="Curriculum Vitae Image">
     </section>
 
-    <section id="contact" onclick="changeBackgroundColor(this)">
+    <section id="contact">
         <h2>Contact Me</h2>
-        <p>Do not hesitate to contact me for collaborations or questions. I can be reached via:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:wambuhumphrey@gmail.com">wambuhumphrey@gmail.com</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/humphrey-masinde/" target="_blank">LinkedIn Profile</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/Humphrey97-dev" target="_blank">GitHub Profile</a></li>
-        </ul>
+        <p><strong>Email:</strong> <a href="mailto:wambuhumphrey@gmail.com">wambuhumphrey@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/humphrey-masinde/" target="_blank">LinkedIn Profile</a></p>
+
+        <h3>Send Me a Message</h3>
+        <form action="your-email-handler-url" method="POST">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
     </section>
 
     <footer>
@@ -284,5 +339,3 @@
     </script>
 </body>
 </html>
-
-<!-- End of Response.html -->

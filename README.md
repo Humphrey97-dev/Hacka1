@@ -23,7 +23,7 @@ Welcome to the personal portfolio of **Humphrey Wambu**. This website highlights
      ```bash
      git clone https://github.com/Humphrey97-dev/Hacka1.git
      ```
-   - Open `index.html` in your browser to view the portfolio.
+   - Open `Response.html` in your browser to view the portfolio.
 
 ## Projects
 1. **HTML5 Elements and Forms** - Showcase of HTML5 features like forms and multimedia.  

@@ -16,7 +16,7 @@ Welcome to the personal portfolio of **Humphrey Wambu**. This website highlights
 
 ## How to View This Portfolio
 1. **View Online**: Hosted on **Netlify**.  
-   [Visit My Portfolio on Netlify](https://remarkable-mochi-6c58bd.netlify.app)
+   [Visit My Portfolio on Netlify](https://gramyis.netlify.app/)
 
 2. **Run Locally**:
    - Clone the repository:
